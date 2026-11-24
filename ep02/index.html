@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medo de errar: frases e exercício</title>
+<meta name="description" content="Material do vídeo Medo de errar no trabalho, da série Entre Pessoas do canal Errando melhor: frases prontas, as duas colunas e um prompt para usar com IA.">
+<style>
+  :root { --ameixa:#391D2C; --coral:#FF664A; --papel:#F6F3EE; --tinta:#2B2522; --media:#7A6F69; --borda:#E4DDD3; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--papel); color:var(--tinta); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background:var(--ameixa); color:var(--papel); padding:28px 16px 24px; }
+  header .w, main { max-width:720px; margin:0 auto; }
+  .marca { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.02em; font-size:15px; opacity:.9; }
+  .ii { display:inline-flex; gap:4px; } .ii i { display:block; width:6px; height:18px; background:var(--coral); border-radius:2px; }
+  h1 { font-size:30px; line-height:1.2; margin:14px 0 6px; }
+  header p { margin:0; opacity:.85; }
+  main { padding:8px 16px 48px; }
+  h2 { font-size:21px; margin:36px 0 8px; display:flex; gap:10px; align-items:baseline; }
+  h2 .n { color:var(--coral); font-weight:800; }
+  .frase { background:#fff; border:1px solid var(--borda); border-left:5px solid var(--coral); border-radius:10px; padding:14px 16px; margin:10px 0; position:relative; }
+  .frase p { margin:0 0 10px; }
+  button.copiar { font:600 14px system-ui, sans-serif; background:var(--ameixa); color:var(--papel); border:0; border-radius:8px; padding:7px 12px; cursor:pointer; }
+  button.copiar:focus-visible { outline:3px solid var(--coral); outline-offset:2px; }
+  .colunas { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:12px 0; }
+  .col { background:#fff; border:1px solid var(--borda); border-radius:10px; padding:12px; }
+  .col b { display:block; font-size:14px; text-transform:uppercase; letter-spacing:.05em; color:var(--media); margin-bottom:6px; }
+  @media (max-width:520px) { .colunas { grid-template-columns:1fr; } h1 { font-size:25px; } }
+  pre { white-space:pre-wrap; background:#fff; border:1px solid var(--borda); border-radius:10px; padding:14px; font:15px/1.55 ui-monospace, Consolas, monospace; margin:10px 0; }
+  .aviso { font-size:15px; color:var(--media); border-top:1px solid var(--borda); padding-top:10px; }
+  .postit { background:#FFF3B0; border-radius:4px; padding:14px 16px; transform:rotate(-1deg); box-shadow:0 2px 6px rgba(0,0,0,.08); max-width:420px; }
+  footer { max-width:720px; margin:0 auto; padding:0 16px 40px; font-size:15px; color:var(--media); }
+  a { color:var(--ameixa); }
+</style>
+</head>
+<body>
+<header><div class="w">
+  <div class="marca"><span class="ii"><i></i><i></i></span> Errando melhor · Entre Pessoas</div>
+  <h1>Medo de errar no trabalho: frases e exercício</h1>
+  <p>O material do vídeo. Escolha uma coisa só para praticar nesta semana.</p>
+</div></header>
+<main>
+
+<h2><span class="n">1</span> Mostrar antes de estar pronto</h2>
+<div class="frase"><p id="f1">Fiz esse rascunho e queria compartilhar com você para finalizar antes da reunião. Está bem inicial, mas adoraria ouvir seus inputs e saber se [parte X] pode ficar para depois.</p><button class="copiar" data-alvo="f1">Copiar</button></div>
+<div class="frase"><p id="f1b">Olha, estou compartilhando uma versão bem inicial para a gente fazer isso junto, e já pegar sua opinião desde o começo.</p><button class="copiar" data-alvo="f1b">Copiar</button></div>
+
+<h2><span class="n">2</span> Quando a resposta demora</h2>
+<div class="frase"><p id="f2">Tranquilo, entendo. Se tiver dois minutos amanhã, dá uma olhada só na [primeira página]? Assim eu já sigo com o resto no caminho certo.</p><button class="copiar" data-alvo="f2">Copiar</button></div>
+
+<h2><span class="n">3</span> Quando um ajuste pequeno parece crítica</h2>
+<p>Pegue um papel e faça duas colunas. Na primeira, só o que foi dito ou feito. Na segunda, o que você ouviu por dentro.</p>
+<div class="colunas">
+  <div class="col"><b>Fato</b>Ele disse que está sem tempo essa semana.</div>
+  <div class="col"><b>O que eu ouvi</b>Meu trabalho está ruim.</div>
+</div>
+<p>Se quiser, numa conversa de rotina, peça:</p>
+<div class="frase"><p id="f3">Você me diria um ponto positivo de como eu lidei com essa entrega e uma oportunidade de melhora?</p><button class="copiar" data-alvo="f3">Copiar</button></div>
+
+<h2><span class="n">4</span> Na semana em que voltar a revisar demais</h2>
+<p>Tudo bem. Respira e cola um post-it no monitor:</p>
+<div class="postit" id="f4">Valorizo e aprendo com feedbacks, compartilhar o rascunho me ajuda e fortalece.</div>
+<p>E anote quantas versões você fez antes de mandar, para ver esse número cair aos poucos.</p>
+
+<h2><span class="n">5</span> Prompt para separar fato de interpretação</h2>
+<pre id="p">Quero separar fatos de interpretações sobre uma situação de trabalho. Não vou usar nomes, dados pessoais nem informação confidencial da empresa, e você também não deve pedir.
+1. Vou descrever o que aconteceu. Se faltar contexto, faça até 2 perguntas antes de seguir.
+2. Separe em duas colunas: (a) o que foi dito ou feito de fato, com as palavras exatas quando houver; (b) o que eu interpretei ou senti.
+3. Para cada interpretação, me dê duas leituras alternativas mais neutras. Não afirme o que a outra pessoa pensou ou quis dizer: ofereça hipóteses.
+4. Não concorde comigo só para me agradar: diga se eu parecer estar exagerando ou minimizando algo.
+5. Não faça diagnóstico nem recomendação de saúde. Se o que eu descrever parecer grave, sugira procurar um profissional.
+6. No fim, se fizer sentido, me ajude a escrever uma frase curta e respeitosa para pedir esclarecimento à pessoa, que não confronte nem exponha ninguém e caiba na relação de hierarquia entre nós.
+Situação: [descreva aqui, sem nomes]</pre>
+<button class="copiar" data-alvo="p">Copiar o prompt</button>
+<p class="aviso">A IA não substitui terapia nem ajuda profissional e não garante ausência de viés. Não cole conversas, nomes, dados de ninguém nem informação confidencial da empresa.</p>
+
+</main>
+<footer>
+  <p>Aqui é conversa e experiência, não terapia nem orientação individual. Se o medo de errar trava a sua vida inteira, vale conversar com um profissional.</p>
+  <p>Vídeo completo: <a href="https://www.youtube.com/@errandomelhor">youtube.com/@errandomelhor</a></p>
+</footer>
+<script>
+document.querySelectorAll("button.copiar").forEach(function (b) {
+  b.addEventListener("click", function () {
+    var t = document.getElementById(b.dataset.alvo).innerText;
+    var ok = function () { var o = b.textContent; b.textContent = "Copiado"; setTimeout(function () { b.textContent = o; }, 1500); };
+    if (navigator.clipboard) { navigator.clipboard.writeText(t).then(ok, function () {}); }
+  });
+});
+</script>
+</body>
+</html>
